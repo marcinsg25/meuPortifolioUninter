@@ -1,0 +1,518 @@
+
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #d9ebe9;
+   
+}
+
+
+
+
+/**************** HEADER COM MENU DE NAVEGAÇÃO  ****************/
+
+header {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(2, 26, 49);
+    padding:15px;
+
+
+}
+
+
+/*ESTILO DA FONTE DA LOGO  */
+
+header h1{
+    color:rgb(42, 165, 93);
+    font-family: Arial Black;
+}
+
+header span{
+    color:rgb(231, 224, 224);
+}
+
+
+
+/* Estilo MENU links  */
+.container-menu{
+    display:flex;
+    justify-content: space-between;
+    gap:10px;
+    list-style-type: none; 
+}
+
+
+
+/*Estilo click dos LINKS*/
+
+.container-menu a{
+    text-decoration: none;
+    padding:10px;
+    font-size:20px;
+    color:White;
+    font-family: Arial Black;
+}
+
+
+
+.container-menu a:hover{
+    background-color: #537bcf;
+    color: white;
+    
+}
+
+.container-menu a:link{
+    padding:5px;
+    border-radius: 5%;
+  
+}
+
+
+/****************TAG MAIN  ****************/
+.container-main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+/***************** SESSÃO DO SOBRE MIM *****************/
+
+
+/*  SESSÃO SOBRE MIM  ESTILO*/
+.container-sobreMim{
+    display:flex;
+    background-color: aliceblue;
+    justify-content: center;
+    padding:30px;
+    margin:10px;
+    gap:10px;
+    
+  
+}
+
+/* TAG ASIDE -  ESTILO PERFIL E LOGO REDE SOCIAIS*/
+.container-sobreMim aside{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:25px;
+    padding:15px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+
+/* TAG UL LISTA FILHO -  PERFIL E LOGO REDE SOCIAIS*/
+.container-sobreMim aside ul{
+    list-style-type: none;
+    display: flex;
+    gap:25px;
+   
+}
+
+
+/* TAG A FILHO -  ESTILO DO CLICK*/
+.container-sobreMim a:hover{
+    background-color: #3bd68e;
+    display: flex;
+    color: rgb(14, 2, 2);
+    border-radius: 50%;
+}
+
+
+/*  CONTAINER SECTION DESCRIÇÃO SOBRE MIM */
+.container-sobreMim section {
+    padding:10px;
+    gap:10px;
+
+}
+
+/*  CONTAINER SECTION ELEMENTOS FILHOS TEXTO */
+.container-sobreMim section h1{
+    
+    font-family: Arial Black;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(0, 22, 68);
+}
+
+.container-sobreMim section p{
+    
+    font-family: Arial Black;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(0, 22, 68);
+    text-align: justify;
+}
+
+
+.container-sobreMim section span{
+    
+    color: rgb(11, 155, 23);
+}
+
+
+
+
+/***************** SESSÃO DO FORMAÇÃO ACADÊMICA *****************/
+
+/* SESSÃO FORMAÇÃO ACADEMICA */
+.container-formacao{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:30px;
+    margin:10px;
+    gap:15px;
+    box-shadow: 2px 2px 5px grey;
+    width: 80%;
+  
+}
+
+/* DIV ESTILO - PLANO DE FUNDO  */
+.container-formacao div{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding:30px;
+    gap:25px;
+    background-color: #bef15d;
+    
+  
+}
+
+/* ESTILO H1 TITULO DA SESSÃO FORMAÇÃO ACADEMICA */
+.container-formacao h1{
+    font-family: Arial Black;
+    font-weight: bold;
+    color: rgb(0, 22, 68);
+    
+}
+
+
+/* ESTILO UL -   LISTA DE CURSOS DE FORMAÇÃO */
+.container-formacao ul{
+    display:flex;
+    flex-direction: column;
+    list-style-type: circle;
+    gap:25px;
+    border: 2px solid rgb(255, 255, 255);
+    padding:30px;
+  
+}
+
+/* ESTILO LI -   ITENS DA LISTA */
+.container-formacao ul li{
+    font-family: Arial Black;
+    font-weight: bold;
+    color: rgb(0, 22, 68);
+  
+}
+
+
+
+
+/*********************** SESSÃO DO PORTIFOLIO ***********************/
+
+/* SESSÃO DO PORTIFOLIO ESTILO */
+.container-portifolio{
+   
+    display: flex;
+    background-color: #d9ebe9;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+    padding:10px;
+    margin:5px;
+    width: 80%;
+    box-shadow: 2px 2px 5px grey;
+}
+
+
+/* ESTILO H1 TITULO DA SESSÃO DO PORTIFOLIO */
+.container-portifolio h1{
+    color: rgb(0, 22, 68);
+    font-family: Arial Black;
+
+
+}
+
+
+/* DIV CARD COM OS LINKS DOS PROJETOS */
+.iten-portifolio {
+    display: flex;
+    flex-direction: row;
+    gap:25px;
+    padding:10px;
+    box-sizing: border-box;
+
+}
+
+/* ESTILOS dos elementos texto  e foto do DIV CARD */
+.card-iten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    gap:15px;
+    padding:45px;
+   
+}
+
+.card-iten h2 {
+    color: rgb(0, 22, 68);
+    font-family: Arial Black;
+   
+}
+
+.card-iten img {
+   height:195px;
+   width:150px;
+   box-shadow: 2px 2px 5px rgb(7, 126, 80);
+   
+   
+}
+
+
+.card-iten p {
+    color: rgb(0, 22, 68);
+    font-family: Arial Black;
+    font-size: 12px;
+   
+}
+
+
+.card-iten:hover{
+    box-shadow: 2px 2px 5px rgb(26, 126, 34);
+    background-color: #6fd6ca63;
+   
+}
+
+
+/************************** CONTATO **************************/
+
+
+/* SESSÃO DO CONTATO  */
+.container-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding:15px;
+    background-color: #d9ebe9;
+
+
+}
+
+
+/* ESTILO H1 TITULO DA SESSÃO CONTATO */
+.container-formulario h1{
+    color: rgb(0, 22, 68);
+    font-family: Arial Black;
+
+}
+
+
+
+/* ESTILO TAG FORM CONTATO */
+.container-formulario form {
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(2, 26, 49);
+    border-radius: 5px;
+    gap: 5px;
+    padding:25px;
+    width: 500px;
+
+}
+
+
+
+/* FORM - ELEMENTO FILHO INPUT */
+.container-formulario form input{
+    border: 2px solid aliceblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 45px;
+    color: #4D4D4F;
+    font-family: Arial Black;
+  
+    
+}
+
+/* FORM-ELEMENTO TEXT AREA ESTILO  */
+.container-formulario form textarea {
+    height: 60px;
+    margin-bottom: 15px;
+    color: #4D4D4F;
+
+}
+
+
+/* FORM - INPUT TEXTOS ESTILO */
+.container-formulario  button{
+    border: 2px solid aliceblue;
+    border-radius: 4px;
+    background-color:  rgb(8, 141, 15);
+    height: 35px;
+    width: 150px;
+    margin: auto;
+    color: white;
+    
+    
+}
+
+.container-formulario button:hover{
+    background-color:  rgb(131, 223, 135);
+    cursor:pointer;
+    
+}
+
+
+/* FORM - LABEL ESTILO */
+.container-formulario form label{
+    color: white;
+    font-family: Arial Black;
+    font-weight: bold;
+
+
+}
+
+
+
+
+
+/****************** SESSÃO RODAPÉ ******************/
+.rodape-fixo {
+    display: flex;
+    background-color: #070d1a;
+    padding: 25px;
+    justify-content:center;
+   
+    
+}
+
+
+
+
+.rodape-fixo h3{
+    color: #dfdee4; 
+    font-family: Arial Black;
+    font-weight: bold;
+  
+}
+
+
+/****************** MEDIA ******************/
+
+/* media query para dispositivos móveis */
+@media only screen and (max-width:600px) {
+    
+    /* HEADER RESPONSIVO */
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+     
+    }
+
+    /* HEADER-menu RESPONSIVO */
+    .container-menu{
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+
+    /* Sessão SobreMim- RESPONSIVO */
+    .container-sobreMim{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        
+      
+    }
+
+  
+    .container-sobreMim section h1{
+    
+        font-family: Arial Black;
+        font-weight: bold;
+        font-size: 18px;
+        color: rgb(0, 22, 68);
+    }
+    
+
+    
+    .container-sobreMim section p{
+    
+        font-family: Arial Black;
+        font-weight: bold;
+        font-size: 13px;
+        color: rgb(0, 22, 68);
+    }
+
+
+
+   
+    
+    /* CONTAINER FORMAÇÃO RESPONSIVO*/
+    .container-formacao div{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding:30px;
+        gap:25px;
+        background-color: #bef15d;
+    }
+
+    
+    /* CONTAINER PORTIFOLIO RESPONSIVO */
+    .container-portifolio h1{
+        color: rgb(0, 22, 68);
+        font-family: Arial Black;
+    
+    
+    }
+    
+    
+
+    .iten-portifolio {
+        display: flex;
+        flex-direction: column;
+        gap:25px;
+        padding:10px;
+    
+    }
+        
+    /* FORMULARIO CONTAO RESPONSIVO */
+    .container-formulario form {
+        
+        width: 400px;
+
+    }
+
+   
+
+    
+  
+}
+
+
+
+
+
+
+
+
